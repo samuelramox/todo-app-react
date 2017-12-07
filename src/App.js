@@ -10,22 +10,34 @@ class App extends Component {
     }
   }
 
-  submitForm = (e, value) => {
+  submitForm = (e) => {
     e.preventDefault()
-    const prevState = this.state.todo
-    prevState.push(value)
+    let {todo} = this.state
+    const value = e.target.querySelector('input').value
+    const newTodo = {
+      id: todo.length + 1,
+      text: value
+    }
+    todo = todo.concat(newTodo)
     this.setState({
-      todo: prevState
+      todo
     })
   }
 
+  removeTodo = (todo) => {
+    this.setState((state) => ({
+      todo: state.todo.filter((item) => item.id !== todo.id
+      )
+    }))
+  }
+
   render() {
-    const {todo, id} = this.state
+    const {todo} = this.state
 
     return (
       <div>
         <Form submit={ this.submitForm } />
-        <Display todo={ todo } removeTodo={ this.removeTodo } key={id}/>
+        <Display todo={ todo } removeTodo={ this.removeTodo } />
       </div>
     )
   }

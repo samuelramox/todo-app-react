@@ -10,7 +10,7 @@ class Form extends Component {
 
   handleTextChange = (e) => {
     this.setState({
-      value: e.target.value,
+      value: e.target.value
     })
   }
 
@@ -22,7 +22,7 @@ class Form extends Component {
         <header className="todo-header">
           <h1 className="todo-title">TODOs</h1>
         </header>
-        <form className="todo-form" onSubmit={ (e) => submit(e, this.state.value) }>
+        <form className="todo-form" onSubmit={ (e) => submit(e) }>
           <input type="text" maxLength="45" className="todo-text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value }/>
           <button type="submit" className="button-add">Add Todo</button>
         </form>
