@@ -23,7 +23,7 @@ class Form extends Component {
           <h1 className="todo-title">TODOs</h1>
         </header>
         <form className="todo-form" onSubmit={ (e) => submit(e) }>
-          <input type="text" maxLength="45" className="todo-text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value } />
+          <input type="text" maxLength="40" className="todo-text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value } />
           <button type="submit" className="button-add"></button>
         </form>
       </div>
