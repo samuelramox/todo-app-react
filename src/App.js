@@ -15,7 +15,7 @@ class App extends Component {
     let {todo} = this.state
     const value = e.target.querySelector('input').value
     const newTodo = {
-      id: todo.length + 1,
+      id: 10000 * Math.random().toFixed(4),
       text: value
     }
     todo = todo.concat(newTodo)
