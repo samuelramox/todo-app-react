@@ -64,22 +64,19 @@ ul {
 }
 
 .button-add {
-  width: 80px;
+  background-image: url('./icons/add.png');
+  width: 50px;
   height: 50px;
+  border: 0;
   align-self: center;
   outline: none;
-  border-radius: 10px;
-  color: green;
-  border: 1px solid green;
-  font-size: 1em;
-  box-shadow: 2px 1px 2px gray;
-  margin-right: 20px;
+  margin-right: 20px
 }
 
 .button-remove {
-  background-image: url('./icons/remove.svg');
-  width: 40px;
-  height: 40px;
+  background-image: url('./icons/remove.png');
+  width: 50px;
+  height: 50px;
   border: 0;
   align-self: center;
   outline: none;

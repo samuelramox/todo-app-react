@@ -31,13 +31,19 @@ class App extends Component {
     }))
   }
 
+  editTodo = (e) => {
+    this.setState({
+      value: e.target.value
+    })
+  }
+
   render() {
     const {todo} = this.state
 
     return (
       <div>
         <Form submit={ this.submitForm } />
-        <Display todo={ todo } removeTodo={ this.removeTodo } />
+        <Display todo={ todo } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
       </div>
     )
   }
