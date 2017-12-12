@@ -20,11 +20,11 @@ class Form extends Component {
     return (
       <div>
         <header className="todo-header">
-          <h1 className="todo-title">TODO LIST</h1>
+          <h1>TODO LIST</h1>
         </header>
-        <form className="todo-form" onSubmit={ (e) => submit(e) }>
-          <input type="text" maxLength="35" className="todo-text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value } />
-          <button type="submit" className="button-add"></button>
+        <form className="todo-form _flex _between _align-center" onSubmit={ (e) => submit(e) }>
+          <input type="text" maxLength="35" className="text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value } />
+          <button type="submit" className="button -add"></button>
         </form>
       </div>
     )
