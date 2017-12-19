@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form'
-import Display from './Display'
+import TodoList from './TodoList'
 
 class App extends Component {
   constructor() {
@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <div>
         <Form submit={ this.submitForm } />
-        <Display todo={ todo } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
+        <TodoList todo={ todo } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
       </div>
     )
   }

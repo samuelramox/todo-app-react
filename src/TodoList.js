@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Display = ({todo, removeTodo, editTodo}) => (
+const TodoList = ({todo, removeTodo, editTodo}) => (
   <div className="container">
     <div className="row">
       <ul className="col-12">
@@ -16,4 +16,4 @@ const Display = ({todo, removeTodo, editTodo}) => (
   </div>
 )
 
-export default Display
+export default TodoList
