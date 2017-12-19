@@ -69,8 +69,7 @@
 
 /* Components */
 
-.todo-form,
-.todo-task {
+.todo-form {
   height: 100px;
   margin-bottom: 5px;
   padding: 10px;
@@ -87,29 +86,6 @@
   color: #9E9E9E;
   font-size: 1.5em;
   font-family: sans-serif;
-}
-
-.todo-task>.text {
-  width: 60%;
-  margin: 20px;
-  border: none;
-  outline: none;
-  color: #9E9E9E;
-  font-size: 1.5em;
-  font-family: sans-serif;
-  text-align: center;
-  overflow: hidden;
-  resize: none;
-  align-self: baseline;
-}
-
-.todo-task>input {
-  margin: 10px;
-}
-
-.todo-task>input[type=checkbox]:checked+.text {
-  text-decoration: line-through;
-  color: #BDBDBD;
 }
 
 
