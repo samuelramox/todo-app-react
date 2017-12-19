@@ -69,17 +69,6 @@
 
 /* Components */
 
-.todo-header {
-  height: 80px;
-  width: 100%;
-  background-color: #9E9E9E;
-  color: #FFF;
-  text-align: center;
-  font-family: sans-serif;
-  line-height: 80px;
-  margin-bottom: 5px;
-}
-
 .todo-form,
 .todo-task {
   height: 100px;

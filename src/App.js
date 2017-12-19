@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Form from './Form'
 import TodoList from './TodoList'
+import Header from './components/header'
+
 
 class App extends Component {
   constructor() {
@@ -42,6 +44,7 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
         <Form submit={ this.submitForm } />
         <TodoList todos={ todos } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
       </div>
