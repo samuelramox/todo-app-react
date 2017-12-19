@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Form from './Form'
-import TodoList from './TodoList'
-import Header from './components/header'
+import Form from '../../Form'
+import TodoList from '../../TodoList'
+import Header from '../header'
 
 
 class App extends Component {
