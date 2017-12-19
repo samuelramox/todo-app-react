@@ -1,15 +1,15 @@
 import React from 'react';
 
-const TodoList = ({todo, removeTodo, editTodo}) => (
+const TodoList = ({todos, removeTodo, editTodo}) => (
   <div className="container">
     <div className="row">
       <ul className="col-12">
-        { todo.map((todo) => (
-            <li className="todo-task _flex _between _align-center" key={ todo.id }>
-              <input type="checkbox"></input>
-              <textarea className="text" maxLength="35" defaultValue={ todo.text } onChange={ this.editTodo }>
+        { todos.map((todos) => (
+            <li className="todo-task _flex _between _align-center" key={ todos.id }>
+              <input type="checkbox" />
+              <textarea className="text" maxLength="35" defaultValue={ todos.text } onChange={ this.editTodo }>
               </textarea>
-              <button type="button" className="button -remove" onClick={ () => removeTodo(todo) }></button>
+              <button type="button" className="button -remove" onClick={ () => removeTodo(todos) }></button>
             </li>)) }
       </ul>
     </div>

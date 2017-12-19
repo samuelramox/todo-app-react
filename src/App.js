@@ -6,27 +6,27 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      todo: []
+      todos: []
     }
   }
 
   submitForm = (e) => {
     e.preventDefault()
-    let {todo} = this.state
+    let {todos} = this.state
     const value = e.target.querySelector('input').value
     const newTodo = {
       id: 10000 * Math.random().toFixed(4),
       text: value
     }
-    todo = todo.concat(newTodo)
+    todos = todos.concat(newTodo)
     this.setState({
-      todo
+      todos
     })
   }
 
   removeTodo = (todo) => {
     this.setState((state) => ({
-      todo: state.todo.filter((item) => item.id !== todo.id
+      todos: state.todos.filter((item) => item.id !== todo.id
       )
     }))
   }
@@ -38,12 +38,12 @@ class App extends Component {
   }
 
   render() {
-    const {todo} = this.state
+    const {todos} = this.state
 
     return (
       <div>
         <Form submit={ this.submitForm } />
-        <TodoList todo={ todo } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
+        <TodoList todos={ todos } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
       </div>
     )
   }
