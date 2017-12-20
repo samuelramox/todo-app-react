@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from '../../todo'
+import Form from '../todo'
 import TodoList from '../todolist'
 import Header from '../header'
 
