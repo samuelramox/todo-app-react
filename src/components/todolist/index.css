@@ -1,4 +1,4 @@
-.todo-task {
+.todo-list {
   height: 100px;
   margin-bottom: 5px;
   padding: 10px;
@@ -21,11 +21,11 @@
   align-self: baseline;
 }
 
-.todo-task>input {
+.todo-list>input {
   margin: 10px;
 }
 
-.todo-task>input[type=checkbox]:checked+.text {
+.todo-list>input[type=checkbox]:checked+.text {
   text-decoration: line-through;
   color: #BDBDBD;
 }
