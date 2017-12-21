@@ -21,7 +21,7 @@ class TodoInput extends Component {
     return (
       <div className="container">
         <div className="row">
-          <form className="todo-form col-12 _flex _between _align-center" onSubmit={ (e) => submit(e) }>
+          <form className="todo-input col-12 _flex _between _align-center" onSubmit={ (e) => submit(e) }>
             <input type="text" maxLength="35" className="text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value } />
             <button type="submit" className="button -add"></button>
           </form>
