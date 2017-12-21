@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoInput from '../todo'
+import TodoInput from '../todoinput'
 import TodoList from '../todolist'
 import Header from '../header'
 
