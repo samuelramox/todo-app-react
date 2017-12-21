@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from '../todo'
+import TodoInput from '../todo'
 import TodoList from '../todolist'
 import Header from '../header'
 
@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Form submit={ this.submitForm } />
+        <TodoInput submit={ this.submitForm } />
         <TodoList todos={ todos } removeTodo={ this.removeTodo } editTodo={ this.editTodo } />
       </div>
     )

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 
-class Form extends Component {
+class TodoInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,4 +31,4 @@ class Form extends Component {
   }
 }
 
-export default Form
+export default TodoInput
