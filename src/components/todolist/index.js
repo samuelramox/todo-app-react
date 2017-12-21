@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import './index.css'
 
 const TodoList = ({todos, removeTodo, editTodo}) => (
@@ -16,5 +17,11 @@ const TodoList = ({todos, removeTodo, editTodo}) => (
     </div>
   </div>
 )
+
+TodoList.propTypes = {
+  todos: PropTypes.array.isRequired,
+  removeTodo: PropTypes.func.isRequired,
+  editTodo: PropTypes.func.isRequired
+}
 
 export default TodoList

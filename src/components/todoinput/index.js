@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import './index.css'
 
 class TodoInput extends Component {
@@ -30,5 +31,10 @@ class TodoInput extends Component {
     )
   }
 }
+
+TodoInput.propTypes = {
+  submit: PropTypes.func.isRequired
+}
+
 
 export default TodoInput
