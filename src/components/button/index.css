@@ -1,0 +1,15 @@
+.button {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  border: 0;
+  outline: none;
+}
+
+.-add {
+  background-image: url('../../icons/add.png');
+}
+
+.-remove {
+  background-image: url('../../icons/remove.png');
+}

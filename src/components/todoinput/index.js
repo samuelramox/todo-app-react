@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './index.css'
+import Button from '../button'
 
 class TodoInput extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class TodoInput extends Component {
         <div className="row">
           <form className="todo-input col-12 _flex _between _align-center" onSubmit={ (e) => submit(e) }>
             <input type="text" maxLength="35" className="text" placeholder="Start typing..." onChange={ this.handleTextChange } value={ this.state.value } />
-            <button type="submit" className="button -add"></button>
+            <Button type="submit" className="button -add" />
           </form>
         </div>
       </div>

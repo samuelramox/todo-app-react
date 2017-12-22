@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import './index.css'
+import Button from '../button'
 
 const TodoList = ({todos, removeTodo, editTodo}) => (
   <div className="container">
@@ -11,7 +12,7 @@ const TodoList = ({todos, removeTodo, editTodo}) => (
               <input type="checkbox" />
               <textarea className="text" maxLength="35" defaultValue={ todos.text } onChange={ this.editTodo }>
               </textarea>
-              <button type="button" className="button -remove" onClick={ () => removeTodo(todos) }></button>
+              <Button type="button" className="button -remove" onClick={ () => removeTodo(todos) } />
             </li>)) }
       </ul>
     </div>
